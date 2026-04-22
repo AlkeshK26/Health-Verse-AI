@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import { motion, AnimatePresence } from 'framer-motion'; // Added for animations
 import { FaRobot, FaDumbbell, FaLeaf, FaBullseye, FaUserFriends } from 'react-icons/fa';
+import remarkGfm from 'remark-gfm'; // Tables ke liye zaroori hai
 
 const DietPlan = () => {
   const [formData, setFormData] = useState({

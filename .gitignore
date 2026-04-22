@@ -27,8 +27,3 @@ dist-ssr
 # Security
 .env
 .env.local
-
-# Media (Backup)
-*.mp4
-*.jpg
-*.png
