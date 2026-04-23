@@ -3,7 +3,7 @@ const axios = require('axios');
 const analyzeMeal = async (req, res) => {
   try {
     const { image } = req.body; // Base64 image
-    const API_KEY = process.env.GEMINI_API_KEY;
+    const API_KEY = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
     // Specialized System Prompt for Vegetarian Muscle Gain
     const systemPrompt = `Act as the Lead Clinical Dietitian & Vision AI Specialist for HealthVerse AI. 

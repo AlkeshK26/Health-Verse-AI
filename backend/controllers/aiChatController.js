@@ -13,7 +13,7 @@ const getAIChatResponse = async (req, res) => {
     
     Be conversational, use some emojis, and stay helpful. If the user asks general questions, answer normally.`;
 
-const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
+const url =`https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
     const requestBody = {
       contents: [
         { role: "user", parts: [{ text: systemPrompt }] },
